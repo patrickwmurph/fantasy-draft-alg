@@ -98,5 +98,5 @@ rmse_comparison_rank = np.sqrt(mean_squared_error(ppr_comparison["Rank_Actual"],
 print("RMSE of PPR:", rmse_comparison_ppr)
 print("RMSE of Rank:", rmse_comparison_rank)
 
-#Export Csv
+#Export CSV
 ppr_comparison.sort_values('PPR_Actual', ascending= False).to_csv('export/2022-test-results.csv')

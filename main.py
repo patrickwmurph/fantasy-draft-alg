@@ -40,8 +40,11 @@ data_sorted["PPR"] *= weights
 for column in numeric_columns:
     data_sorted[column] *= weights
 
+# Keep only the last occurrence of each player's data
+data_last_occurrence = data_sorted.drop_duplicates(subset="Player", keep="last")
+
 # Use all the data for training (no test data for 2023)
-train_data_weighted = data_sorted
+train_data_weighted = data_last_occurrence
 
 # Define the features and target for the weighted data
 X_train_weighted = train_data_weighted.drop(columns=["PPR"])
@@ -63,7 +66,7 @@ gb_model_weighted.fit(X_train_weighted, y_train_weighted)
 predicted_ppr_2023 = gb_model_weighted.predict(X_train_weighted)
 
 # Create a copy of the data for inverse transformation
-data_label_encoded = data_sorted.copy()
+data_label_encoded = data_last_occurrence.copy()
 
 # Calculate the projected PPR values for 2023
 projected_ppr_2023 = pd.DataFrame()
@@ -73,4 +76,5 @@ projected_ppr_2023["PPR_Projected_2023"] = predicted_ppr_2023
 # Display the projected PPR values for 2023
 print(projected_ppr_2023)
 
-projected_ppr_2023.sort_values('PPR_Projected_2023',ascending = False).to_csv('export/2023-projections.csv')
+# Export CSV
+projected_ppr_2023.sort_values('PPR_Projected_2023', ascending = False).to_csv('export/2023-projections.csv')
