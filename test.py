@@ -7,7 +7,7 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error
 
 
-data = pd.read_csv('data/clean_2017-2018-2019-2020-2021-2022-playerstats.csv')
+data = pd.read_csv('data/clean_2010-2011-2012-2013-2014-2015-2016-2017-2018-2019-2020-2021-2022-playerstats.csv')
 
 
 # Drop the unnecessary column

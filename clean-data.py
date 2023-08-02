@@ -2,10 +2,12 @@ from func.functions import player_csv, clean_data
 
 import pandas as pd
 import numpy as np
+import re
+
 
 
 # Input Years
-years_list = [2017,2018,2019,2020,2021, 2022]
+years_list = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]
 
 player_csv(years_list) # downloads years
 
@@ -27,7 +29,7 @@ while True :
 file_path = f'data/{file_name}'
 df = pd.read_csv(file_path)
 
-clean_data(df)
+clean_data(df, file_name)
 
 
 

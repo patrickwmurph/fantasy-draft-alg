@@ -49,7 +49,7 @@ def player_csv(years_list):
 
 # Clean Data
 
-def clean_data(df) :
+def clean_data(df, file_name) :
 
     df = df.drop(axis = 1, columns= 'Unnamed: 0')
 
