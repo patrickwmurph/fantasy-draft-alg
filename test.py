@@ -96,4 +96,6 @@ print("RMSE:", rmse_comparison)
 print(ppr_comparison.head())
 
 #Export test csv
+ppr_comparison['ProjectedRank'] = ppr_comparison["PPR_Projected"].rank(method = 'average', ascending=False)
+
 ppr_comparison.sort_values('PPR_Actual', ascending = False).to_csv('export/2022-test-results')
