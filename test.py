@@ -6,7 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error
 
+
 data = pd.read_csv('data/clean_2017-2018-2019-2020-2021-2022-playerstats.csv')
+
 
 # Drop the unnecessary column
 data = data.drop(columns=["Unnamed: 0"])
@@ -28,75 +30,59 @@ decay_factor = 0.9
 # Sort the data by player and year
 data_sorted = data.sort_values(["Player", "Year"])
 
-# Calculate the weights for each row
-weights = decay_factor ** (data_sorted.groupby("Player").cumcount(ascending=False))
+# Split the data into training set (before 2022) and test set (2022)
+data_train = data_sorted[data_sorted["Year"] < 2022]
+data_test = data_sorted[data_sorted["Year"] == 2022]
 
-# Apply the weights to the PPR values and numerical features
-data_sorted["PPR"] *= weights
+
+# Calculate the weights for each row in the training set
+weights_train = decay_factor ** (data_train.groupby("Player").cumcount(ascending=False))
+
+# Apply the weights to the PPR values and numerical features in the training set
+data_train.loc[:, "PPR"] *= weights_train
 for column in numeric_columns:
-    data_sorted[column] *= weights
+    data_train.loc[:, column] *= weights_train
 
-# Split the weighted data into training and test sets
-train_data_weighted = data_sorted[data_sorted["Year"] < 2022]
-test_data_weighted = data_sorted[data_sorted["Year"] == 2022]
+# Define the features and target for the training data
+X_train = data_train.drop(columns=["PPR"])
+y_train = data_train["PPR"]
 
-# Define the features and target for the weighted data
-X_train_weighted = train_data_weighted.drop(columns=["PPR"])
-y_train_weighted = train_data_weighted["PPR"]
+# Define the features and target for the test data
+X_test = data_test.drop(columns=["PPR"])
+y_test = data_test["PPR"]
 
-X_test_weighted = test_data_weighted.drop(columns=["PPR"])
-y_test_weighted = test_data_weighted["PPR"]
-
-# Apply preprocessor to the weighted training and test sets
+# Apply preprocessor to the training and test sets
 preprocessor = ColumnTransformer(
     transformers=[
         ('num', StandardScaler(), numeric_columns),
         ('cat', OneHotEncoder(), categorical_columns)])
 
-X_train_weighted = preprocessor.fit_transform(X_train_weighted)
-X_test_weighted = preprocessor.transform(X_test_weighted)
+X_train = preprocessor.fit_transform(X_train)
+X_test = preprocessor.transform(X_test)
 
-# Train the Gradient Boosting model on the weighted training data
-gb_model_weighted = GradientBoostingRegressor(random_state=42)
-gb_model_weighted.fit(X_train_weighted, y_train_weighted)
+# Train the Gradient Boosting model on the training data
+gb_model = GradientBoostingRegressor(random_state=42)
+gb_model.fit(X_train, y_train)
 
-# Make predictions on the test data (2022 data)
-y_pred_weighted = gb_model_weighted.predict(X_test_weighted)
+# Predict PPR for 2022
+predicted_ppr_2022 = gb_model.predict(X_test)
 
-# Calculate the RMSE of the predictions on the test data
-rmse_weighted = np.sqrt(mean_squared_error(y_test_weighted, y_pred_weighted))
+# Calculate the Mean Squared Error (MSE) between the projected and actual PPR values for 2022
+mse_2022 = mean_squared_error(y_test, predicted_ppr_2022)
+print(f"MSE for 2022: {mse_2022}")
 
-# Create a copy of the data for inverse transformation
-data_label_encoded = data_sorted.copy()
 
 # Calculate the projected PPR values for 2022
 projected_ppr_2022 = pd.DataFrame()
-projected_ppr_2022["Player"] = le.inverse_transform(data_label_encoded.loc[test_data_weighted.index, "Player"].values)
-projected_ppr_2022["PPR_Projected"] = y_pred_weighted
+projected_ppr_2022["Player"] = le.inverse_transform(data_test["Player"].values)
+projected_ppr_2022["PPR_Projected_2022"] = predicted_ppr_2022
+projected_ppr_2022["PPR_Actual_2022"] = data_test["PPR"].values
 
-# Extract the actual PPR values for 2022
-actual_ppr_2022 = pd.DataFrame()
-actual_ppr_2022["Player"] = le.inverse_transform(data_label_encoded.loc[test_data_weighted.index, "Player"])
-actual_ppr_2022["PPR_Actual"] = y_test_weighted.values
+# Calculate ranks based on projected and actual PPR
+projected_ppr_2022["Projected_Rank"] = projected_ppr_2022["PPR_Projected_2022"].rank(ascending=False)
+projected_ppr_2022["Actual_Rank"] = projected_ppr_2022["PPR_Actual_2022"].rank(ascending=False)
 
-# Merge the actual and projected PPR dataframes
-ppr_comparison = pd.merge(actual_ppr_2022, projected_ppr_2022, on="Player")
+projected_ppr_2022.sort_values('Actual_Rank').to_csv('export/2022-test-results.csv')
 
-# Add Rank Columns to the dataframe
-ppr_comparison['Rank_Actual'] = ppr_comparison["PPR_Actual"].rank(method='average', ascending=False)
-ppr_comparison['Rank_Projected'] = ppr_comparison["PPR_Projected"].rank(method='average', ascending=False)
 
-# Calculate the error for each player
-ppr_comparison["Error_PPR"] = ppr_comparison["PPR_Projected"] - ppr_comparison["PPR_Actual"]
 
-# Calculate the RMSE for both Rank and PPR
-rmse_comparison_ppr = np.sqrt(mean_squared_error(ppr_comparison["PPR_Actual"], ppr_comparison["PPR_Projected"]))
-
-rmse_comparison_rank = np.sqrt(mean_squared_error(ppr_comparison["Rank_Actual"], ppr_comparison["Rank_Projected"]))
-
-# Display the RMSE and the comparison dataframe
-print("RMSE of PPR:", rmse_comparison_ppr)
-print("RMSE of Rank:", rmse_comparison_rank)
-
-#Export CSV
-ppr_comparison.sort_values('PPR_Actual', ascending= False).to_csv('export/2022-test-results.csv')
