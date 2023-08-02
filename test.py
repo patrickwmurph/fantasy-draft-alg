@@ -85,17 +85,22 @@ actual_ppr_2022["PPR_Actual"] = y_test_weighted.values
 # Merge the actual and projected PPR dataframes
 ppr_comparison = pd.merge(actual_ppr_2022, projected_ppr_2022, on="Player")
 
-# Calculate the error for each player
-ppr_comparison["Error"] = ppr_comparison["PPR_Projected"] - ppr_comparison["PPR_Actual"]
+# Add Rank Colums to dataframe
+ppr_comparison['Rank_Actual'] = ppr_comparison["PPR_Actual"].rank(method = 'average', ascending=False)
+ppr_comparison['Rank_Projected'] = ppr_comparison["PPR_Projected"].rank(method = 'average', ascending=False)
 
-# Calculate the RMSE
-rmse_comparison = np.sqrt(mean_squared_error(ppr_comparison["PPR_Actual"], ppr_comparison["PPR_Projected"]))
+# Calculate the error for each player
+ppr_comparison["Error_PPR"] = ppr_comparison["PPR_Projected"] - ppr_comparison["PPR_Actual"]
+
+# Calculate the RMSE for both Rank and PPR
+rmse_comparison_ppr = np.sqrt(mean_squared_error(ppr_comparison["PPR_Actual"], ppr_comparison["PPR_Projected"]))
+
+rmse_comparison_rank = np.sqrt(mean_squared_error(ppr_comparison["Rank_Actual"], ppr_comparison["Rank_Projected"]))
+
 
 # Display the RMSE and the comparison dataframe
-print("RMSE:", rmse_comparison)
-print(ppr_comparison.head())
+print("RMSE of PPR:", rmse_comparison_ppr)
+print("RMSE of Rank:", rmse_comparison_rank)
 
 #Export test csv
-ppr_comparison['ProjectedRank'] = ppr_comparison["PPR_Projected"].rank(method = 'average', ascending=False)
-
 ppr_comparison.sort_values('PPR_Actual', ascending = False).to_csv('export/2022-test-results')
