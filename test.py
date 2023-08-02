@@ -3,10 +3,7 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
-from sklearn.svm import SVR
+from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error
 
 data = pd.read_csv('data/clean_2017-2018-2019-2020-2021-2022-playerstats.csv')
@@ -63,10 +60,10 @@ X_test_weighted = preprocessor.transform(X_test_weighted)
 gb_model_weighted = GradientBoostingRegressor(random_state=42)
 gb_model_weighted.fit(X_train_weighted, y_train_weighted)
 
-# Make predictions on the weighted test data
+# Make predictions on the test data (2022 data)
 y_pred_weighted = gb_model_weighted.predict(X_test_weighted)
 
-# Calculate the RMSE of the predictions on the weighted test data
+# Calculate the RMSE of the predictions on the test data
 rmse_weighted = np.sqrt(mean_squared_error(y_test_weighted, y_pred_weighted))
 
 # Create a copy of the data for inverse transformation
@@ -85,9 +82,9 @@ actual_ppr_2022["PPR_Actual"] = y_test_weighted.values
 # Merge the actual and projected PPR dataframes
 ppr_comparison = pd.merge(actual_ppr_2022, projected_ppr_2022, on="Player")
 
-# Add Rank Colums to dataframe
-ppr_comparison['Rank_Actual'] = ppr_comparison["PPR_Actual"].rank(method = 'average', ascending=False)
-ppr_comparison['Rank_Projected'] = ppr_comparison["PPR_Projected"].rank(method = 'average', ascending=False)
+# Add Rank Columns to the dataframe
+ppr_comparison['Rank_Actual'] = ppr_comparison["PPR_Actual"].rank(method='average', ascending=False)
+ppr_comparison['Rank_Projected'] = ppr_comparison["PPR_Projected"].rank(method='average', ascending=False)
 
 # Calculate the error for each player
 ppr_comparison["Error_PPR"] = ppr_comparison["PPR_Projected"] - ppr_comparison["PPR_Actual"]
@@ -97,10 +94,9 @@ rmse_comparison_ppr = np.sqrt(mean_squared_error(ppr_comparison["PPR_Actual"], p
 
 rmse_comparison_rank = np.sqrt(mean_squared_error(ppr_comparison["Rank_Actual"], ppr_comparison["Rank_Projected"]))
 
-
 # Display the RMSE and the comparison dataframe
 print("RMSE of PPR:", rmse_comparison_ppr)
 print("RMSE of Rank:", rmse_comparison_rank)
 
-#Export test csv
-ppr_comparison.sort_values('PPR_Actual', ascending = False).to_csv('export/2022-test-results')
+#Export Csv
+ppr_comparison.sort_values('PPR_Actual', ascending= False).to_csv('export/2022-test-results.csv')
