@@ -1,4 +1,4 @@
-from func.functions import player_csv, clean_data
+from func.functions import player_csv, clean_data, adp_parser
 
 import pandas as pd
 import numpy as np
@@ -31,5 +31,9 @@ df = pd.read_csv(file_path)
 
 clean_data(df, file_name)
 
+
+# Load average picks
+
+adp_parser()
 
 
