@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np
 import re
+import requests
+
 
 # Download Player Data
 
@@ -92,4 +94,40 @@ def clean_data(df, file_name) :
     df.to_csv(f'data/clean_{file_name}')
 
 
+
+# Pull AVG Pick from fantasy pros
+
+def adp_parser() :
+
+    '''
+    Creates df of 2023 players and their average pick from SLEEPER and RTSPORTS
+    '''
+
+    #Parse and Create df
+
+    url = (f"https://www.fantasypros.com/nfl/adp/overall.php")
+
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, features = 'html.parser')
+
+    table_body = soup.find('tbody')
+
+    rows = table_body.find_all('tr')
+
+    data = []
+
+    for row in rows:
+        cols = row.find_all('td')
+        
+        cols_text = [col.text for col in cols]
+
+        data.append(cols_text)
+
+    # Clean Data
+
+    df = pd.DataFrame(data, columns=['Rank', 'Player', 'POS', 'CBS', 'Sleeper', 'RTSports', 'AVG'])
+    df.drop(columns = ['POS'], inplace = True)
+    df['Player'] = df['Player'].apply(lambda x: re.sub(r' [A-Z]+\s*\(\d+\)', '', x)).apply(str.strip)
+    
+    df.to_csv('export/2023-ave-draft-pick.csv')
 
