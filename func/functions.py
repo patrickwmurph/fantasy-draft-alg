@@ -91,6 +91,8 @@ def clean_data(df, file_name) :
     
     df['FantPos'] = df['FantPos'].replace(0, 'Unknown')
     
+    df['Player'] = df['Player'].apply(lambda x: re.sub(r'\.', '', x))
+    
     df.to_csv(f'data/clean_{file_name}')
 
 
@@ -128,6 +130,7 @@ def adp_parser() :
     df = pd.DataFrame(data, columns=['Rank', 'Player', 'POS', 'CBS', 'Sleeper', 'RTSports', 'AVG'])
     df.drop(columns = ['POS'], inplace = True)
     df['Player'] = df['Player'].apply(lambda x: re.sub(r' [A-Z]+\s*\(\d+\)', '', x)).apply(str.strip)
-    
+    df['Player'] = df['Player'].apply(lambda x: re.sub(r'\.', '', x))
+
     df.to_csv('export/2023-ave-draft-pick.csv')
 
