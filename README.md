@@ -14,7 +14,7 @@ The datasets used for training, testing, and deploying the PPR model can be foun
 
 ## Results
 
-The results of this analysis can be found in **2023-draft-order.csv**. Player VORP was calculated assuming the following :
+The results of this analysis can be found in **2023-draft-order.csv**. Player VORP was calculated assuming the following specifications :
 
 - 12 Team draft
 - Each team needs at least : 1 QB, 2 RB, 2 WR, 1 TE
@@ -27,7 +27,7 @@ If you want to change these specifications for your specific draft or broaden th
 - **PPR_Projected_2023** : A players projected PPR for the coming year based on the model.
 - **VORP** : A players VORP (Value Over Replacement Player) which is calculated using the specifications described above. (Learn more on VORP [here](https://en.wikipedia.org/wiki/Value_over_replacement_player)).
 - **ADP** : A players ADP (Average Draft Position) calculated by averaging a players pick location from Sleeper and RTSports
-- **RankvsADP** : Calculated by subtracting a players ADP from their Rank. If a player has a  RankvsADP>>0 they are **under-valued**, and if visa versa they are *over-valued*.
+- **RankvsADP** : Calculated by subtracting a players ADP from their Rank. If a player has a  RankvsADP>>0 they are *under-valued*, and if visa versa they are *over-valued*.
 
 
 
