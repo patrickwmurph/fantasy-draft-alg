@@ -19,7 +19,7 @@ The results of this analysis can be found in **2023-draft-order.csv**. Player VO
 - 12 Team draft
 - Each team needs at least : 1 QB, 2 RB, 2 WR, 1 TE
 
-If you want to change these specifications for your specific draft or broaden the range of years to train the model see [Deployment](##Deployment).
+If you want to change these specifications for your specific draft or broaden the range of years to train the model see [Deployment](#local-deployment).
 
 ### Glossary :
 
@@ -31,7 +31,9 @@ If you want to change these specifications for your specific draft or broaden th
 
 
 
-## Local Deployment - Coming Soon
+## Local Deployment
+
+**Coming Soon**
 
 ### Using player data in repo
 This project can be deployed using the pre-existing player data from [pro-football-reference](https://www.pro-football-reference.com/) and [fantasy-pros](https://www.fantasypros.com/) included in the **exports** directory.
