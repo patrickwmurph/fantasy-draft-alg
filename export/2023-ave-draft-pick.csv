@@ -12,13 +12,13 @@
 10,11,Nick Chubb, ,14,10,12.0
 11,12,CeeDee Lamb, ,13,11,12.0
 12,13,Jonathan Taylor, ,10,15,12.5
-13,14,A.J. Brown, ,12,13,12.5
+13,14,AJ Brown, ,12,13,12.5
 14,15,Patrick Mahomes II, ,15,18,16.5
 15,16,Davante Adams, ,16,17,16.5
 16,17,Tony Pollard, ,24,14,19.0
 17,18,Josh Allen, ,22,16,19.0
 18,19,Derrick Henry, ,17,21,19.0
-19,20,Amon-Ra St. Brown, ,18,20,19.0
+19,20,Amon-Ra St Brown, ,18,20,19.0
 20,21,Garrett Wilson, ,19,19,19.0
 21,22,Josh Jacobs, ,20,24,22.0
 22,23,Jalen Hurts, ,23,22,22.5
@@ -29,7 +29,7 @@
 27,28,Breece Hall, ,25,32,28.5
 28,29,Chris Olave, ,29,28,28.5
 29,30,DeVonta Smith, ,31,27,29.0
-30,31,Travis Etienne Jr., ,32,30,31.0
+30,31,Travis Etienne Jr, ,32,30,31.0
 31,32,Tee Higgins, ,28,35,31.5
 32,33,Joe Burrow, ,34,31,32.5
 33,34,Jahmyr Gibbs, ,37,33,35.0
@@ -44,12 +44,12 @@
 42,43,Justin Herbert, ,47,40,43.5
 43,44,Dameon Pierce, ,51,37,44.0
 44,45,Keenan Allen, ,39,49,44.0
-45,46,T.J. Hockenson, ,45,45,45.0
+45,46,TJ Hockenson, ,45,45,45.0
 46,47,Justin Fields, ,44,48,46.0
 47,48,Terry McLaurin, ,49,46,47.5
 48,49,Miles Sanders, ,50,47,48.5
 49,50,DeAndre Hopkins, ,48,50,49.0
-50,51,J.K. Dobbins, ,46,54,50.0
+50,51,JK Dobbins, ,46,54,50.0
 51,52,George Kittle, ,52,53,52.5
 52,53,Trevor Lawrence, ,60,52,56.0
 53,54,Jerry Jeudy, ,55,59,57.0
@@ -70,7 +70,7 @@
 68,69,Dallas Goedert, ,65,72,68.5
 69,70,Darren Waller, ,72,66,69.0
 70,71,Brandon Aiyuk, ,67,71,69.0
-71,72,Michael Pittman Jr., ,68,73,70.5
+71,72,Michael Pittman Jr, ,68,73,70.5
 72,73,Tyler Lockett, ,70,76,73.0
 73,74,Isiah Pacheco, ,77,70,73.5
 74,75,Marquise Brown, ,69,85,77.0
@@ -91,7 +91,7 @@
 89,90,Treylon Burks, ,80,100,90.0
 90,91,Tua Tagovailoa, ,95,88,91.5
 91,92,Pat Freiermuth, ,92,93,92.5
-92,93,Brian Robinson Jr., ,102,86,94.0
+92,93,Brian Robinson Jr, ,102,86,94.0
 93,94,Brandin Cooks, ,93,99,96.0
 94,95,Jamaal Williams, ,104,90,97.0
 95,96,Rashaad Penny, ,101,96,98.5
@@ -115,7 +115,7 @@
 113,114,Elijah Moore, ,113,114,113.5
 114,115,Jared Goff, ,126,104,115.0
 115,116,Zay Flowers, ,106,126,116.0
-116,117,Odell Beckham Jr., ,123,112,117.5
+116,117,Odell Beckham Jr, ,123,112,117.5
 117,118,Jameson Williams, ,112,124,118.0
 118,119,Dalton Schultz, ,115,122,118.5
 119,120,Elijah Mitchell, ,122,115,118.5
@@ -154,20 +154,20 @@
 152,153,Donovan Peoples-Jones, ,177,135,156.0
 153,154,Jonathan Mingo, ,137,180,158.5
 154,155,Gerald Everett, ,147,171,159.0
-155,156,Jeff Wilson Jr., ,157,163,160.0
+155,156,Jeff Wilson Jr, ,157,163,160.0
 156,157,Juwan Johnson, ,158,162,160.0
-157,158,K.J. Osborn, ,172,151,161.5
+157,158,KJ Osborn, ,172,151,161.5
 158,159,Michael Mayer, ,160,164,162.0
 159,160,Rashee Rice, ,143,182,162.5
 160,161,Zay Jones, ,152,174,163.0
-161,162,Irv Smith Jr., ,167,160,163.5
+161,162,Irv Smith Jr, ,167,160,163.5
 162,163,Tyjae Spears, ,162,165,163.5
 163,164,Kareem Hunt, ,196,132,164.0
 164,165,Leonard Fournette, ,176,152,164.0
 165,166,Chuba Hubbard, ,171,157,164.0
 166,167,Jerome Ford, ,168,169,168.5
 167,168,Kenny Pickett, ,173,166,169.5
-168,169,C.J. Stroud, ,161,184,172.5
+168,169,CJ Stroud, ,161,184,172.5
 169,170,Jalin Hyatt, ,169,179,174.0
 170,171,Kenneth Gainwell, ,190,159,174.5
 171,172,Brock Purdy, ,178,172,175.0
@@ -182,7 +182,7 @@
 180,181,Parris Campbell, ,189,185,187.0
 181,182,Chase Brown, ,175,201,188.0
 182,183,Mike Gesicki, ,183,195,189.0
-183,184,DJ Chark Jr., ,163,216,189.5
+183,184,DJ Chark Jr, ,163,216,189.5
 184,185,Sam Howell, ,193,188,190.5
 185,186,Van Jefferson, ,170,214,192.0
 186,187,Daniel Carlson, ,209,176,192.5
@@ -203,7 +203,7 @@
 201,202,Zamir White, ,216,198,207.0
 202,203,Michael Carter, ,228,187,207.5
 203,204,Zach Evans, ,200,215,207.5
-204,205,Marvin Mims Jr., ,191,225,208.0
+204,205,Marvin Mims Jr, ,191,225,208.0
 205,206,Mac Jones, ,229,189,209.0
 206,207,Harrison Butker, ,210,209,209.5
 207,208,San Francisco 49ers, , ,136,136.0
@@ -227,14 +227,14 @@
 225,226,Trey McBride, ,192,271,231.5
 226,227,Will Levis, ,250,213,231.5
 227,228,Buffalo Bills, , ,183,183.0
-228,229,Pierre Strong Jr., ,225,244,234.5
+228,229,Pierre Strong Jr, ,225,244,234.5
 229,230,DeWayne McBride, ,185,301,243.0
 230,231,Brandon McManus, ,241,234,237.5
 231,232,Baltimore Ravens, , ,197,197.0
 232,233,Israel Abanikanda, ,205,278,241.5
 233,234,Cameron Dicker, ,265,218,241.5
 234,235,Deuce Vaughn, ,233,250,241.5
-235,236,Mecole Hardman Jr., ,236,248,242.0
+235,236,Mecole Hardman Jr, ,236,248,242.0
 236,237,Jelani Woods, ,218,267,242.5
 237,238,Noah Fant, ,234,252,243.0
 238,239,Jacksonville Jaguars, , ,203,203.0
@@ -246,7 +246,7 @@
 244,245,Jake Ferguson, ,230,262,246.0
 245,246,James Robinson, ,252,240,246.0
 246,247,DeVante Parker, ,214,281,247.5
-247,248,Richie James Jr., ,249,246,247.5
+247,248,Richie James Jr, ,249,246,247.5
 248,249,Cade Otton, ,224,272,248.0
 249,250,Allen Robinson II, ,237,260,248.5
 250,251,Darius Slayton, ,235,264,249.5
@@ -257,7 +257,7 @@
 255,256,New York Jets, , ,220,220.0
 256,257,Keaontay Ingram, ,221,307,264.0
 257,258,Gardner Minshew II, , ,226,226.0
-258,259,Terrace Marshall Jr., ,238,273,255.5
+258,259,Terrace Marshall Jr, ,238,273,255.5
 259,260,New Orleans Saints, , ,227,227.0
 260,261,Khalil Shakir, ,227,308,267.5
 261,262,Miami Dolphins, , ,228,228.0
@@ -278,7 +278,7 @@
 276,277,Michael Wilson, ,248,297,272.5
 277,278,Colt McCoy, , ,251,251.0
 278,279,Pittsburgh Steelers, , ,253,253.0
-279,280,Marvin Jones Jr., ,253, ,253.0
+279,280,Marvin Jones Jr, ,253, ,253.0
 280,281,Los Angeles Chargers, , ,254,254.0
 281,282,Detroit Lions, , ,256,256.0
 282,283,Joshua Palmer, ,256,296,276.0
@@ -321,7 +321,7 @@
 319,320,Latavius Murray, , ,285,285.0
 320,321,Melvin Gordon III, , ,286,286.0
 321,322,Kenny McIntosh, , ,288,288.0
-322,323,J.D. McKissic, , ,290,290.0
+322,323,JD McKissic, , ,290,290.0
 323,324,Greg Joseph, , ,295,295.0
 324,325,Denzel Mims, , ,300,300.0
 325,326,Carolina Panthers, , ,302,302.0
@@ -331,4 +331,4 @@
 329,330,Trent Sherfield, , ,314,314.0
 330,331,Kendrick Bourne, , ,316,316.0
 331,332,Trey Palmer, , ,317,317.0
-332,333,Chris Rodriguez Jr., , ,318,318.0
+332,333,Chris Rodriguez Jr, , ,318,318.0
