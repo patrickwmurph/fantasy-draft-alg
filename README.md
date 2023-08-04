@@ -21,6 +21,8 @@ The results of this analysis can be found in **2023-draft-order.csv**. Player VO
 
 If you want to change these specifications for your specific draft or broaden the range of years to train the model see [Deployment](#local-deployment).
 
+**NOTE** : Players who have been drafted in 2023, or for any other reason have no player data in the past 12 years will not have their PPR projected (i.e. Bijan Robinson).
+
 ### Glossary :
 
 - **Rank** : A players relative rank based on VORP
