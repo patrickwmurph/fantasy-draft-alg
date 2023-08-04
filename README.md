@@ -10,7 +10,7 @@ This repository contains a predictive model for forecasting the Player Performan
 
 ## Datasets :
 
-The datasets used for training, testing, and deploying the PPR model can be found in the **data** directory. The data contains player statistics for each year, including the player name, position, team, and various performance metrics. The results of the PPR projections for 2023 and model testing on 2022 statistics can be found in the **export** directory titled, **2023-projections.csv** and **2022-test-results.csv** respectively. If you want a description of the model, see [Appendix A: Model Architecture](#Appendix).
+The datasets used for training, testing, and deploying the PPR model can be found in the **data** directory. The data contains player statistics for each year, including the player name, position, team, and various performance metrics. The results of the PPR projections for 2023 and model testing on 2022 statistics can be found in the **export** directory titled, **2023-projections.csv** and **2022-test-results.csv** respectively. If you want a description of the model, see [Appendix A: Model Architecture](#appendix).
 
 ## Results
 
@@ -19,7 +19,7 @@ The results of this analysis can be found in **2023-draft-order.csv**. Player VO
 - 12 Team draft
 - Each team needs at least : 1 QB, 2 RB, 2 WR, 1 TE
 
-If you want to change these specifications for your specific draft or broaden the range of years to train the model see [Deployment](#deployment).
+If you want to change these specifications for your specific draft or broaden the range of years to train the model see [Deployment](##Deployment).
 
 ### Glossary :
 
