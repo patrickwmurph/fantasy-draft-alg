@@ -1,3 +1,4 @@
 *.DS_Store
 archive/
 func/__pycache__
+*testing-*

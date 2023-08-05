@@ -41,9 +41,10 @@ def player_csv(years_list):
     combined_df = pd.concat(dataframes, ignore_index= True)
     
     file_path = (f'{dir_name}/{years}playerstats.csv')
-        
+       
     combined_df.to_csv(file_path)
     
+
     print(f"Player data for the years {years.strip('-')} has been created.")
     
     
@@ -54,7 +55,7 @@ def player_csv(years_list):
 def clean_data(df, file_name) :
 
     df = df.drop(axis = 1, columns= 'Unnamed: 0')
-
+    
     pattern = re.compile('[*+]')
     df['Player'] = [pattern.sub('',i) for i in df['Player']] 
     
@@ -93,6 +94,8 @@ def clean_data(df, file_name) :
     
     df['Player'] = df['Player'].apply(lambda x: re.sub(r'\.', '', x))
     
+    df['Player'] = df['Player'].apply(lambda x: re.sub(r'\s+(I|V|X|L|C|D|M)+$', '', x))
+
     df.to_csv(f'data/clean_{file_name}')
 
 
@@ -131,6 +134,7 @@ def adp_parser() :
     df.drop(columns = ['POS'], inplace = True)
     df['Player'] = df['Player'].apply(lambda x: re.sub(r' [A-Z]+\s*\(\d+\)', '', x)).apply(str.strip)
     df['Player'] = df['Player'].apply(lambda x: re.sub(r'\.', '', x))
+    df['Player'] = df['Player'].apply(lambda x: re.sub(r'\s+(I|V|X|L|C|D|M)+$', '', x))
 
     df.to_csv('export/2023-ave-draft-pick.csv')
 
