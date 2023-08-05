@@ -44,7 +44,6 @@ def player_csv(years_list):
        
     combined_df.to_csv(file_path)
     
-
     print(f"Player data for the years {years.strip('-')} has been created.")
     
     
