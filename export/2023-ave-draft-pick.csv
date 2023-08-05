@@ -6,14 +6,14 @@
 4,5,Cooper Kupp, ,5,5,5.0
 5,6,Travis Kelce, ,6,6,6.0
 6,7,Tyreek Hill, ,7,7,7.0
-7,8,Bijan Robinson, ,8,8,8.0
-8,9,Saquon Barkley, ,9,9,9.0
+7,8,Saquon Barkley, ,9,8,8.5
+8,9,Bijan Robinson, ,8,9,8.5
 9,10,Stefon Diggs, ,11,12,11.5
 10,11,Nick Chubb, ,14,10,12.0
 11,12,CeeDee Lamb, ,13,11,12.0
 12,13,Jonathan Taylor, ,10,15,12.5
 13,14,AJ Brown, ,12,13,12.5
-14,15,Patrick Mahomes II, ,15,18,16.5
+14,15,Patrick Mahomes, ,15,18,16.5
 15,16,Davante Adams, ,16,17,16.5
 16,17,Tony Pollard, ,24,14,19.0
 17,18,Josh Allen, ,22,16,19.0
@@ -26,20 +26,20 @@
 24,25,Rhamondre Stevenson, ,26,23,24.5
 25,26,Najee Harris, ,30,26,28.0
 26,27,Mark Andrews, ,27,29,28.0
-27,28,Breece Hall, ,25,32,28.5
-28,29,Chris Olave, ,29,28,28.5
+27,28,Chris Olave, ,29,28,28.5
+28,29,Breece Hall, ,25,33,29.0
 29,30,DeVonta Smith, ,31,27,29.0
-30,31,Travis Etienne Jr, ,32,30,31.0
-31,32,Tee Higgins, ,28,35,31.5
+30,31,Tee Higgins, ,28,34,31.0
+31,32,Travis Etienne Jr, ,32,30,31.0
 32,33,Joe Burrow, ,34,31,32.5
-33,34,Jahmyr Gibbs, ,37,33,35.0
-34,35,Kenneth Walker III, ,36,34,35.0
-35,36,DK Metcalf, ,33,38,35.5
-36,37,Lamar Jackson, ,35,36,35.5
-37,38,Deebo Samuel, ,38,41,39.5
+33,34,Jahmyr Gibbs, ,37,32,34.5
+34,35,DK Metcalf, ,33,38,35.5
+35,36,Lamar Jackson, ,35,36,35.5
+36,37,Kenneth Walker, ,36,35,35.5
+37,38,Deebo Samuel, ,38,42,40.0
 38,39,Joe Mixon, ,41,39,40.0
-39,40,Aaron Jones, ,40,44,42.0
-40,41,Amari Cooper, ,42,42,42.0
+39,40,Amari Cooper, ,42,41,41.5
+40,41,Aaron Jones, ,40,44,42.0
 41,42,Calvin Ridley, ,43,43,43.0
 42,43,Justin Herbert, ,47,40,43.5
 43,44,Dameon Pierce, ,51,37,44.0
@@ -49,28 +49,28 @@
 47,48,Terry McLaurin, ,49,46,47.5
 48,49,Miles Sanders, ,50,47,48.5
 49,50,DeAndre Hopkins, ,48,50,49.0
-50,51,JK Dobbins, ,46,54,50.0
+50,51,JK Dobbins, ,46,56,51.0
 51,52,George Kittle, ,52,53,52.5
 52,53,Trevor Lawrence, ,60,52,56.0
-53,54,Jerry Jeudy, ,55,59,57.0
+53,54,Jerry Jeudy, ,55,58,56.5
 54,55,Alexander Mattison, ,64,51,57.5
 55,56,DJ Moore, ,54,62,58.0
 56,57,Christian Watson, ,56,60,58.0
-57,58,Dalvin Cook, ,61,57,59.0
-58,59,Cam Akers, ,59,61,60.0
-59,60,Drake London, ,53,68,60.5
-60,61,D'Andre Swift, ,63,58,60.5
+57,58,D'Andre Swift, ,63,57,60.0
+58,59,Dalvin Cook, ,61,59,60.0
+59,60,Cam Akers, ,59,61,60.0
+60,61,Drake London, ,53,68,60.5
 61,62,Kyle Pitts, ,57,67,62.0
 62,63,James Conner, ,62,64,63.0
 63,64,Chris Godwin, ,58,69,63.5
-64,65,Rachaad White, ,74,55,64.5
-65,66,Javonte Williams, ,73,56,64.5
+64,65,Rachaad White, ,74,54,64.0
+65,66,Javonte Williams, ,73,55,64.0
 66,67,Mike Williams, ,66,63,64.5
 67,68,Christian Kirk, ,71,65,68.0
-68,69,Dallas Goedert, ,65,72,68.5
+68,69,Dallas Goedert, ,65,73,69.0
 69,70,Darren Waller, ,72,66,69.0
 70,71,Brandon Aiyuk, ,67,71,69.0
-71,72,Michael Pittman Jr, ,68,73,70.5
+71,72,Michael Pittman Jr, ,68,74,71.0
 72,73,Tyler Lockett, ,70,76,73.0
 73,74,Isiah Pacheco, ,77,70,73.5
 74,75,Marquise Brown, ,69,85,77.0
@@ -78,257 +78,254 @@
 76,77,Alvin Kamara, ,78,78,78.0
 77,78,Mike Evans, ,75,82,78.5
 78,79,Diontae Johnson, ,76,81,78.5
-79,80,James Cook, ,86,74,80.0
+79,80,James Cook, ,86,72,79.0
 80,81,Deshaun Watson, ,87,75,81.0
 81,82,Dak Prescott, ,85,80,82.5
-82,83,George Pickens, ,82,84,83.0
+82,83,George Pickens, ,82,83,82.5
 83,84,AJ Dillon, ,89,79,84.0
-84,85,Jaxon Smith-Njigba, ,81,92,86.5
-85,86,Antonio Gibson, ,91,83,87.0
-86,87,Jordan Addison, ,83,91,87.0
+84,85,Jaxon Smith-Njigba, ,81,91,86.0
+85,86,Jordan Addison, ,83,92,87.5
+86,87,Antonio Gibson, ,91,84,87.5
 87,88,Evan Engram, ,90,87,88.5
-88,89,Jahan Dotson, ,84,95,89.5
-89,90,Treylon Burks, ,80,100,90.0
-90,91,Tua Tagovailoa, ,95,88,91.5
+88,89,Treylon Burks, ,80,100,90.0
+89,90,Jahan Dotson, ,84,96,90.0
+90,91,Tua Tagovailoa, ,95,89,92.0
 91,92,Pat Freiermuth, ,92,93,92.5
 92,93,Brian Robinson Jr, ,102,86,94.0
 93,94,Brandin Cooks, ,93,99,96.0
 94,95,Jamaal Williams, ,104,90,97.0
-95,96,Rashaad Penny, ,101,96,98.5
+95,96,Rashaad Penny, ,101,95,98.0
 96,97,Kadarius Toney, ,88,111,99.5
-97,98,David Njoku, ,96,103,99.5
-98,99,De'Von Achane, ,111,89,100.0
+97,98,De'Von Achane, ,111,88,99.5
+98,99,David Njoku, ,96,103,99.5
 99,100,Khalil Herbert, ,107,94,100.5
-100,101,Gabe Davis, ,97,105,101.0
+100,101,Gabe Davis, ,97,104,100.5
 101,102,Michael Thomas, ,98,106,102.0
 102,103,Courtland Sutton, ,108,97,102.5
-103,104,Samaje Perine, ,105,101,103.0
-104,105,Zach Charbonnet, ,99,108,103.5
-105,106,Kirk Cousins, ,110,102,106.0
-106,107,Quentin Johnston, ,94,121,107.5
+103,104,Samaje Perine, ,105,102,103.5
+104,105,Zach Charbonnet, ,99,109,104.0
+105,106,Kirk Cousins, ,110,101,105.5
+106,107,Quentin Johnston, ,94,120,107.0
 107,108,Daniel Jones, ,118,98,108.0
-108,109,JuJu Smith-Schuster, ,103,113,108.0
-109,110,Anthony Richardson, ,100,119,109.5
-110,111,Damien Harris, ,114,110,112.0
-111,112,Aaron Rodgers, ,116,109,112.5
+108,109,JuJu Smith-Schuster, ,103,114,108.5
+109,110,Anthony Richardson, ,100,118,109.0
+110,111,Aaron Rodgers, ,116,108,112.0
+111,112,Damien Harris, ,114,110,112.0
 112,113,Geno Smith, ,119,107,113.0
-113,114,Elijah Moore, ,113,114,113.5
-114,115,Jared Goff, ,126,104,115.0
-115,116,Zay Flowers, ,106,126,116.0
+113,114,Elijah Moore, ,113,113,113.0
+114,115,Jared Goff, ,126,105,115.5
+115,116,Zay Flowers, ,106,125,115.5
 116,117,Odell Beckham Jr, ,123,112,117.5
 117,118,Jameson Williams, ,112,124,118.0
 118,119,Dalton Schultz, ,115,122,118.5
-119,120,Elijah Mitchell, ,122,115,118.5
-120,121,Dalton Kincaid, ,120,117,118.5
-121,122,Jerick McKinnon, ,124,116,120.0
+119,120,Dalton Kincaid, ,120,117,118.5
+120,121,Elijah Mitchell, ,122,116,119.0
+121,122,Jerick McKinnon, ,124,115,119.5
 122,123,Chigoziem Okonkwo, ,117,123,120.0
 123,124,Allen Lazard, ,121,130,125.5
-124,125,Russell Wilson, ,133,120,126.5
-125,126,Rashod Bateman, ,109,146,127.5
-126,127,Adam Thielen, ,128,128,128.0
-127,128,D'Onta Foreman, ,139,118,128.5
-128,129,Cole Kmet, ,125,134,129.5
-129,130,Tyler Allgeier, ,130,131,130.5
-130,131,Greg Dulcich, ,129,133,131.0
+124,125,Russell Wilson, ,133,121,127.0
+125,126,Adam Thielen, ,128,128,128.0
+126,127,Rashod Bateman, ,109,148,128.5
+127,128,D'Onta Foreman, ,139,119,129.0
+128,129,Cole Kmet, ,125,133,129.0
+129,130,Greg Dulcich, ,129,132,130.5
+130,131,Tyler Allgeier, ,130,131,130.5
 131,132,Skyy Moore, ,136,127,131.5
-132,133,Tank Bigsby, ,149,125,137.0
-133,134,Tyler Higbee, ,138,138,138.0
-134,135,Devin Singletary, ,135,142,138.5
-135,136,Jaylen Warren, ,150,129,139.5
-136,137,Kendre Miller, ,131,148,139.5
+132,133,Tank Bigsby, ,149,126,137.5
+133,134,Tyler Higbee, ,138,137,137.5
+134,135,Devin Singletary, ,135,141,138.0
+135,136,Kendre Miller, ,131,147,139.0
+136,137,Jaylen Warren, ,150,129,139.5
 137,138,Rondale Moore, ,141,139,140.0
 138,139,Jakobi Meyers, ,127,154,140.5
 139,140,Raheem Mostert, ,144,140,142.0
 140,141,Sam LaPorta, ,145,144,144.5
-141,142,Tyler Boyd, ,132,158,145.0
-142,143,Darnell Mooney, ,134,156,145.0
+141,142,Darnell Mooney, ,134,156,145.0
+142,143,Tyler Boyd, ,132,159,145.5
 143,144,Ezekiel Elliott, ,146,145,145.5
-144,145,Derek Carr, ,156,137,146.5
-145,146,Nico Collins, ,153,141,147.0
-146,147,Roschon Johnson, ,148,153,150.5
-147,148,Romeo Doubs, ,151,150,150.5
+144,145,Derek Carr, ,156,138,147.0
+145,146,Nico Collins, ,153,142,147.5
+146,147,Romeo Doubs, ,151,146,148.5
+147,148,Roschon Johnson, ,148,152,150.0
 148,149,Matthew Stafford, ,159,143,151.0
-149,150,Kyler Murray, ,142,167,154.5
-150,151,Jordan Love, ,154,155,154.5
-151,152,Bryce Young, ,140,170,155.0
+149,150,Jordan Love, ,154,155,154.5
+150,151,Bryce Young, ,140,170,155.0
+151,152,Kyler Murray, ,142,169,155.5
 152,153,Donovan Peoples-Jones, ,177,135,156.0
 153,154,Jonathan Mingo, ,137,180,158.5
 154,155,Gerald Everett, ,147,171,159.0
-155,156,Jeff Wilson Jr, ,157,163,160.0
-156,157,Juwan Johnson, ,158,162,160.0
-157,158,KJ Osborn, ,172,151,161.5
-158,159,Michael Mayer, ,160,164,162.0
-159,160,Rashee Rice, ,143,182,162.5
+155,156,Jeff Wilson Jr, ,157,161,159.0
+156,157,Rashee Rice, ,143,176,159.5
+157,158,Juwan Johnson, ,158,164,161.0
+158,159,KJ Osborn, ,172,151,161.5
+159,160,Michael Mayer, ,160,165,162.5
 160,161,Zay Jones, ,152,174,163.0
-161,162,Irv Smith Jr, ,167,160,163.5
-162,163,Tyjae Spears, ,162,165,163.5
-163,164,Kareem Hunt, ,196,132,164.0
-164,165,Leonard Fournette, ,176,152,164.0
-165,166,Chuba Hubbard, ,171,157,164.0
-166,167,Jerome Ford, ,168,169,168.5
-167,168,Kenny Pickett, ,173,166,169.5
-168,169,CJ Stroud, ,161,184,172.5
-169,170,Jalin Hyatt, ,169,179,174.0
-170,171,Kenneth Gainwell, ,190,159,174.5
+161,162,Chuba Hubbard, ,171,157,164.0
+162,163,Leonard Fournette, ,176,153,164.5
+163,164,Irv Smith Jr, ,167,162,164.5
+164,165,Kareem Hunt, ,196,134,165.0
+165,166,Tyjae Spears, ,162,168,165.0
+166,167,Jerome Ford, ,168,166,167.0
+167,168,Kenny Pickett, ,173,163,168.0
+168,169,CJ Stroud, ,161,183,172.0
+169,170,Kenneth Gainwell, ,190,158,174.0
+170,171,Jalin Hyatt, ,169,179,174.0
 171,172,Brock Purdy, ,178,172,175.0
-172,173,Justin Tucker, ,207,149,178.0
+172,173,Justin Tucker, ,207,150,178.5
 173,174,Alec Pierce, ,179,178,178.5
-174,175,Michael Gallup, ,155,204,179.5
-175,176,Taysom Hill, ,166,196,181.0
-176,177,Rashid Shaheed, ,164,200,182.0
-177,178,Clyde Edwards-Helaire, ,174,194,184.0
-178,179,Cordarrelle Patterson, ,202,168,185.0
-179,180,Gus Edwards, ,187,186,186.5
-180,181,Parris Campbell, ,189,185,187.0
-181,182,Chase Brown, ,175,201,188.0
-182,183,Mike Gesicki, ,183,195,189.0
-183,184,DJ Chark Jr, ,163,216,189.5
-184,185,Sam Howell, ,193,188,190.5
-185,186,Van Jefferson, ,170,214,192.0
-186,187,Daniel Carlson, ,209,176,192.5
-187,188,Jayden Reed, ,181,212,196.5
+174,175,Michael Gallup, ,155,203,179.0
+175,176,Taysom Hill, ,166,195,180.5
+176,177,Rashid Shaheed, ,164,198,181.0
+177,178,Clyde Edwards-Helaire, ,174,188,181.0
+178,179,Cordarrelle Patterson, ,202,167,184.5
+179,180,Gus Edwards, ,187,184,185.5
+180,181,Mike Gesicki, ,183,191,187.0
+181,182,Parris Campbell, ,189,185,187.0
+182,183,Chase Brown, ,175,200,187.5
+183,184,DJ Chark Jr, ,163,214,188.5
+184,185,Sam Howell, ,193,186,189.5
+185,186,Van Jefferson, ,170,213,191.5
+186,187,Daniel Carlson, ,209,175,192.0
+187,188,Jayden Reed, ,181,211,196.0
 188,189,Ryan Tannehill, ,217,177,197.0
-189,190,Tim Patrick, ,182,217,199.5
-190,191,Trey Lance, ,188,211,199.5
-191,192,Marquez Valdes-Scantling, ,195,205,200.0
-192,193,Tyler Bass, ,211,190,200.5
-193,194,Wan'Dale Robinson, ,180,222,201.0
-194,195,Jimmy Garoppolo, ,222,181,201.5
-195,196,Zach Ertz, ,197,206,201.5
-196,197,Dawson Knox, ,165,239,202.0
-197,198,John Metchie III, ,184,221,202.5
-198,199,Evan McPherson, ,208,199,203.5
-199,200,Isaiah Hodgins, ,199,210,204.5
-200,201,Hayden Hurst, ,204,207,205.5
-201,202,Zamir White, ,216,198,207.0
-202,203,Michael Carter, ,228,187,207.5
-203,204,Zach Evans, ,200,215,207.5
-204,205,Marvin Mims Jr, ,191,225,208.0
-205,206,Mac Jones, ,229,189,209.0
-206,207,Harrison Butker, ,210,209,209.5
+189,190,Marquez Valdes-Scantling, ,195,204,199.5
+190,191,Trey Lance, ,188,212,200.0
+191,192,Tyler Bass, ,211,189,200.0
+192,193,Wan'Dale Robinson, ,180,221,200.5
+193,194,John Metchie, ,184,217,200.5
+194,195,Dawson Knox, ,165,237,201.0
+195,196,Jimmy Garoppolo, ,222,181,201.5
+196,197,Tim Patrick, ,182,223,202.5
+197,198,Zach Ertz, ,197,209,203.0
+198,199,Isaiah Hodgins, ,199,208,203.5
+199,200,Evan McPherson, ,208,199,203.5
+200,201,Marvin Mims Jr, ,191,219,205.0
+201,202,Hayden Hurst, ,204,206,205.0
+202,203,Zamir White, ,216,197,206.5
+203,204,Mac Jones, ,229,187,208.0
+204,205,Harrison Butker, ,210,207,208.5
+205,206,Michael Carter, ,228,190,209.0
+206,207,Desmond Ridder, ,219,201,210.0
 207,208,San Francisco 49ers, , ,136,136.0
-208,209,Desmond Ridder, ,219,202,210.5
-209,210,Luke Musgrave, ,198,224,211.0
+208,209,Luke Musgrave, ,198,224,211.0
+209,210,Zach Evans, ,200,222,211.0
 210,211,Curtis Samuel, ,194,229,211.5
-211,212,Isaiah Likely, ,201,230,215.5
-212,213,Philadelphia Eagles, , ,147,147.0
-213,214,Hunter Renfrow, ,186,249,217.5
-214,215,Baker Mayfield, ,247,191,219.0
-215,216,Hunter Henry, ,251,193,222.0
-216,217,Dallas Cowboys, , ,161,161.0
-217,218,Joshua Kelley, ,254,192,223.0
-218,219,Ty Chandler, ,213,233,223.0
-219,220,Jason Myers, ,240,208,224.0
-220,221,Tank Dell, ,223,231,227.0
-221,222,Younghoe Koo, ,212,245,228.5
-222,223,Tyler Conklin, ,220,237,228.5
-223,224,New England Patriots, , ,173,173.0
-224,225,Cole Beasley, , ,175,175.0
-225,226,Trey McBride, ,192,271,231.5
-226,227,Will Levis, ,250,213,231.5
-227,228,Buffalo Bills, , ,183,183.0
-228,229,Pierre Strong Jr, ,225,244,234.5
-229,230,DeWayne McBride, ,185,301,243.0
-230,231,Brandon McManus, ,241,234,237.5
-231,232,Baltimore Ravens, , ,197,197.0
-232,233,Israel Abanikanda, ,205,278,241.5
-233,234,Cameron Dicker, ,265,218,241.5
-234,235,Deuce Vaughn, ,233,250,241.5
-235,236,Mecole Hardman Jr, ,236,248,242.0
-236,237,Jelani Woods, ,218,267,242.5
-237,238,Noah Fant, ,234,252,243.0
-238,239,Jacksonville Jaguars, , ,203,203.0
-239,240,Josh Downs, ,203,292,247.5
+211,212,Isaiah Likely, ,201,231,216.0
+212,213,Philadelphia Eagles, , ,149,149.0
+213,214,Hunter Renfrow, ,186,252,219.0
+214,215,Baker Mayfield, ,247,193,220.0
+215,216,Hunter Henry, ,251,192,221.5
+216,217,Dallas Cowboys, , ,160,160.0
+217,218,Jason Myers, ,240,205,222.5
+218,219,Joshua Kelley, ,254,194,224.0
+219,220,Ty Chandler, ,213,235,224.0
+220,221,Younghoe Koo, ,212,243,227.5
+221,222,Tank Dell, ,223,233,228.0
+222,223,New England Patriots, , ,173,173.0
+223,224,Tyler Conklin, ,220,244,232.0
+224,225,Buffalo Bills, , ,182,182.0
+225,226,Trey McBride, ,192,275,233.5
+226,227,DeWayne McBride, ,185,303,244.0
+227,228,Pierre Strong Jr, ,225,248,236.5
+228,229,Brandon McManus, ,241,234,237.5
+229,230,Will Levis, ,250,228,239.0
+230,231,Deuce Vaughn, ,233,247,240.0
+231,232,Baltimore Ravens, , ,196,196.0
+232,233,Israel Abanikanda, ,205,276,240.5
+233,234,Mecole Hardman Jr, ,236,246,241.0
+234,235,Cameron Dicker, ,265,218,241.5
+235,236,Jelani Woods, ,218,267,242.5
+236,237,Jacksonville Jaguars, , ,202,202.0
+237,238,Jake Ferguson, ,230,258,244.0
+238,239,Noah Fant, ,234,254,244.0
+239,240,Josh Downs, ,203,298,250.5
 240,241,Chase Edmonds, ,257,232,244.5
-241,242,Logan Thomas, ,244,247,245.5
-242,243,Robert Woods, ,206,294,250.0
-243,244,Kyle Trask, ,269,223,246.0
-244,245,Jake Ferguson, ,230,262,246.0
-245,246,James Robinson, ,252,240,246.0
-246,247,DeVante Parker, ,214,281,247.5
-247,248,Richie James Jr, ,249,246,247.5
-248,249,Cade Otton, ,224,272,248.0
-249,250,Allen Robinson II, ,237,260,248.5
-250,251,Darius Slayton, ,235,264,249.5
+241,242,Robert Woods, ,206,297,251.5
+242,243,James Robinson, ,252,240,246.0
+243,244,Darius Slayton, ,235,259,247.0
+244,245,Sterling Shepard, , ,210,210.0
+245,246,Logan Thomas, ,244,251,247.5
+246,247,Justyn Ross, ,226,270,248.0
+247,248,Cade Otton, ,224,273,248.5
+248,249,DeVante Parker, ,214,284,249.0
+249,250,Richie James Jr, ,249,249,249.0
+250,251,Gardner Minshew, , ,215,215.0
 251,252,Puka Nacua, ,215, ,215.0
-252,253,Justyn Ross, ,226,274,250.0
-253,254,Jake Elliott, ,262,238,250.0
-254,255,Kansas City Chiefs, , ,219,219.0
+252,253,Kansas City Chiefs, , ,216,216.0
+253,254,Allen Robinson, ,237,264,250.5
+254,255,Jake Elliott, ,262,239,250.5
 255,256,New York Jets, , ,220,220.0
-256,257,Keaontay Ingram, ,221,307,264.0
-257,258,Gardner Minshew II, , ,226,226.0
-258,259,Terrace Marshall Jr, ,238,273,255.5
-259,260,New Orleans Saints, , ,227,227.0
-260,261,Khalil Shakir, ,227,308,267.5
-261,262,Miami Dolphins, , ,228,228.0
-262,263,Chase Claypool, ,231,287,259.0
-263,264,Tyquan Thornton, ,232,303,267.5
-264,265,Jason Sanders, ,239,279,259.0
-265,266,Jake Moody, ,263,255,259.0
-266,267,Washington Commanders, , ,235,235.0
-267,268,Greg Zuerlein, , ,236,236.0
-268,269,Kyren Williams, ,255,269,262.0
-269,270,Matt Gay, ,242,283,262.5
-270,271,Mike White, , ,241,241.0
-271,272,Cleveland Browns, , ,242,242.0
-272,273,Denver Broncos, , ,243,243.0
+256,257,Keaontay Ingram, ,221,309,265.0
+257,258,Terrace Marshall Jr, ,238,271,254.5
+258,259,Mike White, , ,225,225.0
+259,260,Kyle Trask, ,269,241,255.0
+260,261,Colt McCoy, , ,226,226.0
+261,262,New Orleans Saints, , ,227,227.0
+262,263,Khalil Shakir, ,227,312,269.5
+263,264,Miami Dolphins, , ,230,230.0
+264,265,Chase Claypool, ,231,290,260.5
+265,266,Tyquan Thornton, ,232,301,266.5
+266,267,Jason Sanders, ,239,280,259.5
+267,268,Jake Moody, ,263,257,260.0
+268,269,Greg Zuerlein, , ,236,236.0
+269,270,Kyren Williams, ,255,266,260.5
+270,271,Denver Broncos, , ,238,238.0
+271,272,Washington Commanders, , ,242,242.0
+272,273,Matt Gay, ,242,285,263.5
 273,274,Eric Gray, ,243,306,274.5
-274,275,Sean Tucker, ,245,298,271.5
-275,276,Malik Davis, ,246,305,275.5
-276,277,Michael Wilson, ,248,297,272.5
-277,278,Colt McCoy, , ,251,251.0
-278,279,Pittsburgh Steelers, , ,253,253.0
+274,275,Cleveland Browns, , ,245,245.0
+275,276,Sean Tucker, ,245,300,272.5
+276,277,Malik Davis, ,246,302,274.0
+277,278,Michael Wilson, ,248,299,273.5
+278,279,Deon Jackson, , ,250,250.0
 279,280,Marvin Jones Jr, ,253, ,253.0
-280,281,Los Angeles Chargers, , ,254,254.0
-281,282,Detroit Lions, , ,256,256.0
-282,283,Joshua Palmer, ,256,296,276.0
-283,284,Seattle Seahawks, , ,257,257.0
-284,285,Sterling Shepard, , ,258,258.0
+280,281,D'Ernest Johnson, , ,253,253.0
+281,282,Luke Schoonmaker, ,260,278,269.0
+282,283,Pittsburgh Steelers, , ,255,255.0
+283,284,Seattle Seahawks, , ,256,256.0
+284,285,Joshua Palmer, ,256,294,275.0
 285,286,Corey Davis, ,258, ,258.0
-286,287,Jarvis Landry, , ,259,259.0
-287,288,Greg Dortch, ,259, ,259.0
-288,289,Luke Schoonmaker, ,260,299,279.5
-289,290,Deon Jackson, , ,261,261.0
-290,291,Cedric Tillman, ,261,313,287.0
-291,292,Matt Breida, , ,263,263.0
-292,293,Zack Moss, ,266,282,274.0
-293,294,Graham Gano, ,264,289,276.5
-294,295,Indianapolis Colts, , ,265,265.0
-295,296,Cincinnati Bengals, , ,266,266.0
-296,297,Evan Hull, ,267,291,279.0
-297,298,Tampa Bay Buccaneers, , ,268,268.0
-298,299,Isaiah Spiller, ,268,310,289.0
-299,300,Ronald Jones II, ,270, ,270.0
-300,301,D'Ernest Johnson, , ,270,270.0
-301,302,Daniel Bellinger, ,271,293,282.0
-302,303,Darnell Washington, ,272, ,272.0
+286,287,Greg Dortch, ,259, ,259.0
+287,288,Jarvis Landry, , ,260,260.0
+288,289,Detroit Lions, , ,261,261.0
+289,290,Cedric Tillman, ,261,313,287.0
+290,291,Cincinnati Bengals, , ,262,262.0
+291,292,Indianapolis Colts, , ,263,263.0
+292,293,Evan Hull, ,267,281,274.0
+293,294,Graham Gano, ,264,287,275.5
+294,295,Los Angeles Chargers, , ,265,265.0
+295,296,Zack Moss, ,266,286,276.0
+296,297,Tampa Bay Buccaneers, , ,268,268.0
+297,298,Isaiah Spiller, ,268,310,289.0
+298,299,Matt Breida, , ,269,269.0
+299,300,Ronald Jones, ,270, ,270.0
+300,301,Daniel Bellinger, ,271,308,289.5
+301,302,Darnell Washington, ,272, ,272.0
+302,303,Kenny McIntosh, , ,272,272.0
 303,304,Foster Moreau, ,273, ,273.0
-304,305,Devin Duvernay, ,274, ,274.0
-305,306,Brett Maher, , ,275,275.0
+304,305,New York Giants, , ,274,274.0
+305,306,Devin Duvernay, ,274, ,274.0
 306,307,Josh Reynolds, ,275, ,275.0
-307,308,Wil Lutz, , ,276,276.0
-308,309,Mack Hollins, ,276, ,276.0
-309,310,Green Bay Packers, , ,277,277.0
-310,311,Trayveon Williams, ,277,315,296.0
-311,312,Kayshon Boutte, ,278, ,278.0
-312,313,Russell Gage, ,279, ,279.0
-313,314,New York Giants, , ,280,280.0
-314,315,Austin Hooper, ,281, ,281.0
+307,308,Mack Hollins, ,276, ,276.0
+308,309,Minnesota Vikings, , ,277,277.0
+309,310,Trayveon Williams, ,277,314,295.5
+310,311,Kayshon Boutte, ,278, ,278.0
+311,312,Russell Gage, ,279, ,279.0
+312,313,Deneric Prince, , ,279,279.0
+313,314,Austin Hooper, ,281, ,281.0
+314,315,Melvin Gordon, , ,282,282.0
 315,316,Xavier Hutchinson, ,282, ,282.0
 316,317,Tim Tebow, ,283, ,283.0
-317,318,Nick Tiano, ,284, ,284.0
-318,319,Deneric Prince, , ,284,284.0
-319,320,Latavius Murray, , ,285,285.0
-320,321,Melvin Gordon III, , ,286,286.0
-321,322,Kenny McIntosh, , ,288,288.0
-322,323,JD McKissic, , ,290,290.0
-323,324,Greg Joseph, , ,295,295.0
-324,325,Denzel Mims, , ,300,300.0
-325,326,Carolina Panthers, , ,302,302.0
-326,327,Raheem Blackshear, , ,309,309.0
-327,328,Ke'Shawn Vaughn, , ,311,311.0
-328,329,Jordan Mason, , ,312,312.0
-329,330,Trent Sherfield, , ,314,314.0
-330,331,Kendrick Bourne, , ,316,316.0
-331,332,Trey Palmer, , ,317,317.0
-332,333,Chris Rodriguez Jr, , ,318,318.0
+317,318,Latavius Murray, , ,283,283.0
+318,319,Nick Tiano, ,284, ,284.0
+319,320,Wil Lutz, , ,288,288.0
+320,321,Brett Maher, , ,289,289.0
+321,322,Denzel Mims, , ,291,291.0
+322,323,Green Bay Packers, , ,292,292.0
+323,324,Greg Joseph, , ,293,293.0
+324,325,Cade York, , ,295,295.0
+325,326,Raheem Blackshear, , ,296,296.0
+326,327,Carolina Panthers, , ,304,304.0
+327,328,Jordan Mason, , ,305,305.0
+328,329,Ke'Shawn Vaughn, , ,307,307.0
+329,330,Trey Palmer, , ,315,315.0
